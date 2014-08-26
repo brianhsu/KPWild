@@ -1,0 +1,211 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #d2dcdf;
+
+}
+
+.ui.transparent.menu {
+  opacity: 0.8;
+}
+
+.ui.card.segment {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.name {
+  font-family: 'Courgette', cursive;
+  font-size: 3em;
+}
+
+.handwriting {
+  font-family: 'Courgette', cursive;
+  font-size: 0.7em;
+}
+
+#aboutCard {
+  color: #000000;
+}
+
+.ui.masthead.grid {
+  background-image: url('../images/yuzuhaBackground.jpg');
+  background-repeat:no-repeat;
+  background-position: center top;
+  padding-top:50px;
+  color: #FFFFFF;
+  box-shadow:0px 10px 10px rgba(20%,20%,40%,0.5);
+  height: 800px;
+}
+
+.ui.masthead-mobile.grid {
+  background-image: url('../images/yuzuhaBackground.jpg');
+  background-repeat:no-repeat;
+  background-position: center top;
+  padding-top:150px;
+  color: #FFFFFF;
+  box-shadow:0px 10px 10px rgba(20%,20%,40%,0.5);
+  height: 500px;
+}
+
+.right.panel {
+  position: fixed;
+  top: 0;
+  margin-top:130px;
+  right: 0;
+  padding:1em;
+  color: rgba(255, 255, 255, 0.6);
+  max-height:450px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  z-index: 999;
+
+}
+
+#topPanel {
+  font-family: 'Courgette', cursive;
+}
+
+@media screen and (max-width: 993px) {
+  .right.panel {
+    display: none;
+  }
+
+  #snsLinks {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  #topPanel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image.comment {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .mobile.comment {
+    display: none;
+  }
+}
+
+
+
+.right.panel a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.post-it.segment {
+  background-color: #FCF0AD;
+  box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+
+.lean-left {
+  -webkit-transform: rotate(1.2deg);
+  -moz-transform: rotate(1.2deg);
+  -o-transform: rotate(1.2deg);
+  -ms-transform: rotate(1.2deg);
+  transform: rotate(1.2deg);
+}
+
+.lean-right {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.ui.popup { 
+  line-height: 1.5em;
+}
+
+.dark.grid {
+  color: #FFFFFF;
+  background-image: url('../images/dark-bg.png');
+  box-shadow:0px 10px 10px rgba(20%,20%,40%,0.5);
+
+}
+
+.white.icon.header {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.slideshowItem {
+  border: 4px solid #FFFFFF; 
+  width: 99%
+}
+
+.image.comment {
+  background-color: black;
+  position: absolute; 
+  bottom:4px; 
+  padding: 10px;
+  opacity: 0.65;
+  right: 10px;
+  line-height: 1.5em;
+  text-align: left;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.thumbLink {
+  text-decoration:none;
+  color:#000;
+  background:#fff;
+  display:block;
+  padding:0.3rem;
+  margin-top: 0.5rem;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);      
+  text-align: center
+}
+
+div.photoList div {
+  -webkit-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -moz-transform:rotate(-1deg);
+}
+
+div.photoList div:nth-child(2n) a{
+  -o-transform:rotate(1deg);
+  -webkit-transform:rotate(1deg);
+  -moz-transform:rotate(1deg);
+  position:relative;
+  top:5px;
+}
+
+div.photoList div:nth-child(3n) a{
+  -o-transform:rotate(-1deg);
+  -webkit-transform:rotate(-1deg);
+  -moz-transform:rotate(-1deg);
+  position:relative;
+  top:-5px;
+}
+
+a.thumbLink:hover {
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  position:relative;
+  z-index:5;
+}
+
+.linking.grid {
+  padding-left: 10px; 
+  padding-right:10px; 
+  margin-top: -10px;
+}
