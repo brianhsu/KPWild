@@ -1,0 +1,6 @@
+柯文哲野生官網 BrianHsu.moe 分站
+======================================
+
+這是柯文哲[野生官網活動](http://unlimited.kptaipei.tw/)裡的其中一隻野生柯文哲官網，使用比起 bootstrap 比較沒那流行的 [SemanticUI](http://semantic-ui.com/) 作為 CSS Framework，加上使用 jQuery 來取得柯文哲官方公開 API 上的資料，基本上是個非常陽春的網站。
+
+網站位置：http://brianhsu.moe/KPWild

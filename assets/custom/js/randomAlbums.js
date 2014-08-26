@@ -32,9 +32,9 @@ function showRandomSongs() {
   onRandomData(songDataURL, maxItem, function (dataJSON) {
     var randomSongs = parseData(dataJSON, maxItem);
     for (var i = 0; i < randomSongs.length; i++) {
-      console.log(randomSongs[i]);
       var songID = randomSongs[i].soundcloudID;
       var songURL = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/kptaipei/" + songID + "&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false";
+      console.log(randomSongs[i]);
       $('#song' + i).attr('src', songURL);
     }
   });
@@ -42,13 +42,14 @@ function showRandomSongs() {
 
 function showRandomPolicy() {
   var maxItem = 4;
-  var policyDataURL = "http://api.kptaipei.tw/v1/musics http://api.kptaipei.tw/v1/category/40?accessToken=" + apiKey;
+  var policyDataURL = "http://api.kptaipei.tw/v1/category/40?accessToken=" + apiKey;
   onRandomData(policyDataURL, maxItem, function (dataJSON) {
     var randomPolicy = parseData(dataJSON, maxItem);
     for (var i = 0; i < randomPolicy.length; i++) {
       console.log(randomPolicy[i]);
       var title = randomPolicy[i].title;
-      var content = randomPolicy[i].plain_content.replace("\n", "<br/>");
+      var content = randomPolicy[i].content.toString().replace('width="560"', 'width="480"');
+      console.log(content);
       $('#policyTitle' + i).html(title);
       $('#policy' + i).html(content);
     }
@@ -69,7 +70,7 @@ function getRandom(data, maxItem) {
   var randomData = shuffle(data);
   var limit = maxItem < randomData.length ? maxItem : randomData.length;
 
-  for (var i = 0; i < limit; i++) {
+  for (var i = 0; i <= limit; i++) {
     limitedData.push(randomData[i]);
   }
   return limitedData;
@@ -77,8 +78,8 @@ function getRandom(data, maxItem) {
 
 function parseData(json, maxItem) {
   var data = [];
-  for (var i = 0; i < songJSON.data.length; i++) {
-    data.push(songJSON.data[i]);
+  for (var i = 0; i < json.data.length; i++) {
+    data.push(json.data[i]);
   }
 
   return getRandom(data, maxItem);

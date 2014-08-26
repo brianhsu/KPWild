@@ -13,16 +13,6 @@ html, body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.name {
-  font-family: 'Courgette', cursive;
-  font-size: 3em;
-}
-
-.handwriting {
-  font-family: 'Courgette', cursive;
-  font-size: 0.7em;
-}
-
 #aboutCard {
   color: #000000;
 }
@@ -61,10 +51,6 @@ html, body {
   border-radius: 10px 0px 0px 10px;
   z-index: 999;
 
-}
-
-#topPanel {
-  font-family: 'Courgette', cursive;
 }
 
 @media screen and (max-width: 993px) {
@@ -107,23 +93,6 @@ html, body {
   background-color: #FCF0AD;
   box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
 }
-
-.lean-left {
-  -webkit-transform: rotate(1.2deg);
-  -moz-transform: rotate(1.2deg);
-  -o-transform: rotate(1.2deg);
-  -ms-transform: rotate(1.2deg);
-  transform: rotate(1.2deg);
-}
-
-.lean-right {
-  -webkit-transform: rotate(-1deg);
-  -moz-transform: rotate(-1deg);
-  -o-transform: rotate(-1deg);
-  -ms-transform: rotate(-1deg);
-  transform: rotate(-1deg);
-}
-
 
 a {
   text-decoration: none;

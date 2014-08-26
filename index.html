@@ -24,7 +24,8 @@
 <body>
   <div class="ui fixed transparent inverted main menu">
     <div class="container">
-      <a href="/" class="item"><div class="ui header">柯文哲野生官網</div></a>
+      <a href="/KPWild/" class="item"><div class="ui header">柯文哲野生官網</div></a>
+      <div class="item"><a href="http://brianhsu.moe/">BrianHsu.moe</a> 分站</div>
 
       <div class="right menu" style="padding-right: 10px;" id="snsLinks">
         <a class="tooltip icon item" data-content="FaceBook" href="https://www.facebook.com/DoctorKoWJ">
@@ -33,10 +34,11 @@
         <a class="tooltip icon item" data-content="Flickr 相簿" href="https://www.flickr.com/photos/110839995@N06/sets/">
           <i class="large flickr icon"></i>
         </a>
+	<a href="#faq" class="item">問與答</a>
       </div>
       <div class="right menu" id="topPanel">
         <a class="item" href="#policy">政見</a>
-        <a class="item" href="#songs">台北調</a>
+        <a class="item" href="#music">台北調</a>
         <a class="item" href="#albums">相簿</a>
         <a class="item" href="#websites">真．官網</a>
       </div>
@@ -48,7 +50,7 @@
       政見
     </a>
     <br/>
-    <a href="#songs" class="ui tiny icon header">
+    <a href="#music" class="ui tiny icon header">
       <i class="music tiny link icon"></i>
       台北調
     </a>
@@ -101,28 +103,9 @@
         </div>
       </div>
     </div>
-    <div class="column">
-      <div class="ui post-it segment">
-        <div class="ui black ribbon label" id="policyTitle3"></div>
-        <div class="column stackable ui grid">
-          <div class="column" id="policy3">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="ui lean-left post-it segment">
-        <div class="ui orange ribbon label" id="policyTitle4"></div>
-        <div class="column stackable ui grid">
-          <div class="column" id="policy4">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
-  <a name="workspace"></a>
+  <a name="music"></a>
   <div class="ui center aligned one column dark page grid" style="padding-bottom: 100px;">
     <div class="column">
       <div class="center aligned one column ui grid" style="padding-top:40px;">
@@ -135,7 +118,7 @@
     </div>
     <div class="column" >
       <div style="margin-bottom:1em;">
-        <iframe id="song1" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/kptaipei/inxrx9fwgezv&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false" frameborder="no" height="200" width="100%"></iframe>
+        <iframe id="song1" scrolling="no" src="" frameborder="no" height="200" width="100%"></iframe>
       </div>
       <div style="margin-bottom:1em;">
         <iframe id="song2" scrolling="no" src="" frameborder="no" height="200" width="100%"></iframe>
@@ -195,18 +178,59 @@
         </div>
       </div>
     </div>
-
   </div>
+  <a name="faq"></a>
+  <div class="center aligned one column ui grid" style="padding-top:40px; padding-bottom:20px">
+    <div class="handwriting column">
+      <div class="ui icon header">
+        <i class="question icon"></i> FAQ
+      </div>
+    </div>
+    <div class="column">
+      <div class="one column ui page grid" style="margin-left:250px; margin-right:150px;" >
+        <div class="column">
+          <div class="ui accordion">
+            <div class="active title">
+              <i class="dropdown icon"></i>
+	     這個網站是什麼？和柯文哲的官方網站有什麼關係？ 
+            </div>
+            <div class="active content">
+              <p>這是響應柯文哲陣營推出的「<a href="http://unlimited.kptaipei.tw/#event-intro">柯文哲野生官網</a>」活動，網站上的資料是使用柯文哲官方提供的往開放資料 API 來取得相關資訊，透過這種方式，每個人都可以用不同的方式來呈現出這些資料。</p>
+	      <p>也因為這樣，這樣的野生官網有一部份「官網」的性質，因為資料是官方提供，但另一方面，卻又不完全是由官方製作。</p>
+            </div>
+            <div class="title">
+              <i class="dropdown icon"></i>
+              所以到底什麼是開放資料 API？
+            </div>
+            <div class="content">
+              <p>所謂開放資料 API 指的是一種可以讓寫程式的人可以用標準的操作方式，取得使用某種通用的規格來表達的資料，因為整個過程都可以經由寫簡單的程式來處理，所以的大家可以自由發揮拿到的資料。</p>
+	      <p>目前政府也有一些資料使用這種方式釋出，筆者也曾利用政府的開放資料 API 製作過<a href="https://play.google.com/store/apps/details?id=org.bone.findlost">失物招領的 Android APP</a>，不過這是第一次看到有候選人個人的開放資料 API，所以就跟風做了一個網站。</p>
+            </div>
+            <div class="title">
+              <i class="dropdown icon"></i>
+             你們都是綠的對不對？否則為什麼只幫柯文哲做網站？
+            </div>
+            <div class="content">
+              <p>冤枉啊！這是因為柯文哲提供了<a href="http://unlimited.kptaipei.tw/#event-intro">官方開放 API</a>，所以會寫程式和作網站的人可以很輕易地取得柯文哲的相關資料和把資料呈現出來。但連勝文陣營並沒有類似的東西來讓寫程式的人取得資料，甚至連行之多年的 RSS 交換格式檔案也沒有，自然較少人幫他做網站。</p>
+              <p>如果連勝文也推出了官方 API 或甚至是只要提供 RSS，我立馬也幫他套版一個！</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
   <script>
     $(document).ready(function() {
       $('.tooltip').popup();
       showRandomPolicy();
-      showRandomAlbums('#photoList', 8);
+      showRandomAlbums('#photoList', 11);
       showRandomSongs();
-        
+      $('.ui.accordion').accordion();
     })
-
-
   </script>
 </body>
 
